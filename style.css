@@ -72,8 +72,6 @@ main {
 }
 
 .user-container {
-  display: flex;
-  flex-direction: column;
   background-color: rgba(247, 236, 222, 0.35);
   overflow: hidden;
   position: relative;
@@ -98,24 +96,28 @@ main {
 }
 
 /* Posts styles */
+#posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
 #posts-header {
   border-bottom: 1px solid rgba(84, 186, 185, 0.5);
   text-align: center;
   margin-bottom: 0.5rem;
 }
 
-#posts-list {
-  width: 90%;
-  margin: auto;
-}
-
 .post-container {
-  width: 100%;
   border-bottom: 1px solid rgba(84, 186, 185, 0.65);
-  margin: 0 0 1rem 0;
-  padding: 0.25rem 0.25rem 0.75rem 0.25rem;
+  margin-bottom: 0.85rem;
 }
 
 .post-title {
   margin: 0 0 0.45rem 0;
+}
+
+.post-body {
+  margin-bottom: 0.45rem;
 }
